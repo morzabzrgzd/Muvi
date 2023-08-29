@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:muvi/constants/app_routes.dart';
 import 'package:muvi/controllers/onboarding/onboarding_ctrl.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -81,7 +82,9 @@ class OnboardingPage extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.offAllNamed(AppRoutes.LOGIN_ROUTE);
+                  },
                   child: Text(
                     'Get Started',
                     style: Theme.of(context).textTheme.labelSmall,

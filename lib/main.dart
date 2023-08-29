@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:muvi/constants/app_routes.dart';
+import 'package:muvi/pages/login/login_page.dart';
 import 'package:muvi/pages/onboarding/onboarding_page.dart';
 import 'package:muvi/pages/splash/splash_page.dart';
 import 'package:muvi/themes/themes.dart';
@@ -28,6 +29,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: AppRoutes.ONBOARDING_ROUTE,
           page: () => const OnboardingPage(),
+        ),
+        GetPage(
+          name: AppRoutes.LOGIN_ROUTE,
+          page: () => const LoginPage(),
         ),
       ],
     );

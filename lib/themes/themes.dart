@@ -25,9 +25,25 @@ class MyTheme {
         fontSize: 18,
         fontWeight: FontWeight.w300,
       ),
+      titleSmall: TextStyle(
+        color: Colors.white,
+        fontWeight: FontWeight.w600,
+        fontSize: 16,
+      ),
       labelSmall: TextStyle(
         color: Color(0xff202123),
+        fontWeight: FontWeight.w600,
         fontSize: 16,
+      ),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        alignment: Alignment.center,
+        elevation: 0,
+        shadowColor: Colors.transparent,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(4),
+        ),
       ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
@@ -38,7 +54,7 @@ class MyTheme {
           borderRadius: BorderRadius.circular(4),
         ),
         backgroundColor: const Color(0xffFFD130),
-        fixedSize: const Size.fromHeight(40),
+        fixedSize: const Size.fromHeight(45),
       ),
     ),
     colorScheme: const ColorScheme.dark(

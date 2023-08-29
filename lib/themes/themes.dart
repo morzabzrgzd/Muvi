@@ -1,11 +1,9 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 
 class MyTheme {
   static final darkTheme = ThemeData(
     scaffoldBackgroundColor: const Color(0xff202123),
-    fontFamily: 'NotoSansDisplay',
+    fontFamily: 'Nunito',
     primaryColor: const Color(0xff018786),
     appBarTheme: const AppBarTheme(
       backgroundColor: Color(0xff1a181a),
@@ -13,14 +11,36 @@ class MyTheme {
       scrolledUnderElevation: 0,
     ),
     useMaterial3: true,
-    textTheme: TextTheme(
-      headline6: const TextStyle(color: Colors.white, fontSize: 20),
-      bodyText1: TextStyle(color: Colors.grey.shade800),
-      bodyText2: const TextStyle(color: Colors.white),
+    textTheme: const TextTheme(
+      // titleLarge: const TextStyle(color: Colors.white, fontSize: 20),
+      // bodyLarge: TextStyle(color: Colors.grey.shade800),
+      // bodyMedium: const TextStyle(color: Colors.white),
+      bodyLarge: TextStyle(
+        color: Colors.white,
+        fontSize: 30,
+        fontWeight: FontWeight.bold,
+      ),
+      bodySmall: TextStyle(
+        color: Colors.white,
+        fontSize: 18,
+        fontWeight: FontWeight.w300,
+      ),
+      labelSmall: TextStyle(
+        color: Color(0xff202123),
+        fontSize: 16,
+      ),
     ),
-    // splashColor: Colors.grey.shade800,
-    // highlightColor: Colors.grey.shade800,
-    // hoverColor: Colors.grey.shade800,
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        elevation: 0,
+        shadowColor: Colors.transparent,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(4),
+        ),
+        backgroundColor: const Color(0xffFFD130),
+        fixedSize: const Size.fromHeight(40),
+      ),
+    ),
     colorScheme: const ColorScheme.dark(
       secondary: Colors.black45,
       primary: Colors.white70,

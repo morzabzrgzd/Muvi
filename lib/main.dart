@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Muvi',
+      debugShowCheckedModeBanner: false,
       theme: MyTheme.darkTheme,
       initialRoute: AppRoutes.SPLASH_ROUTE,
       getPages: [

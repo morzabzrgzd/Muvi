@@ -6,4 +6,5 @@ class AppRoutes {
   static const String LOGIN_ROUTE = '/login';
   static const String REGISTER_ROUTE = '/register';
   static const String MAIN_ROUTE = '/main';
+  static const String HOME_ROUTE = '/home';
 }

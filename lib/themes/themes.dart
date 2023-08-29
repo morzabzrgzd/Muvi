@@ -27,8 +27,14 @@ class MyTheme {
       ),
       titleSmall: TextStyle(
         color: Colors.white,
-        fontWeight: FontWeight.w600,
+        // fontWeight: FontWeight.w600,
         fontSize: 16,
+      ),
+
+      titleLarge: TextStyle(
+        color: Colors.white,
+        fontWeight: FontWeight.bold,
+        fontSize: 20,
       ),
       labelSmall: TextStyle(
         color: Color(0xff202123),

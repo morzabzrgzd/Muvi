@@ -4,12 +4,15 @@ import 'package:flutter/material.dart';
 
 class MyTheme {
   static final darkTheme = ThemeData(
-    scaffoldBackgroundColor: const Color(0xff0a0a0a),
+    scaffoldBackgroundColor: const Color(0xff202123),
     fontFamily: 'NotoSansDisplay',
     primaryColor: const Color(0xff018786),
     appBarTheme: const AppBarTheme(
       backgroundColor: Color(0xff1a181a),
+      elevation: 0,
+      scrolledUnderElevation: 0,
     ),
+    useMaterial3: true,
     textTheme: TextTheme(
       headline6: const TextStyle(color: Colors.white, fontSize: 20),
       bodyText1: TextStyle(color: Colors.grey.shade800),

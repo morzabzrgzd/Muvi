@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 
 import '../../components/custom_text_field.dart';
 import '../../components/social_btn.dart';
+import '../../constants/app_routes.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
@@ -27,7 +28,9 @@ class RegisterPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         width: double.infinity,
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.offAllNamed(AppRoutes.MAIN_ROUTE);
+          },
           child: Text(
             'Register',
             style: Theme.of(context).textTheme.labelSmall,
@@ -45,9 +48,9 @@ class RegisterPage extends StatelessWidget {
               style: Theme.of(context).textTheme.bodyLarge,
             ),
             const SizedBox(height: 10),
-            Text(
+            const Text(
               'Enter information below or login with social\naccount to get started',
-              style: const TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 30),
             const CustomTextField(

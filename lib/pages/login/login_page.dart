@@ -18,7 +18,9 @@ class LoginPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         width: double.infinity,
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.offAllNamed(AppRoutes.MAIN_ROUTE);
+          },
           child: Text(
             'Login',
             style: Theme.of(context).textTheme.labelSmall,

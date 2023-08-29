@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
+import 'package:muvi/constants/app_routes.dart';
 
 import '../../components/custom_text_field.dart';
 import '../../components/social_btn.dart';
@@ -64,7 +66,9 @@ class LoginPage extends StatelessWidget {
                         width: 120,
                       ),
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.toNamed(AppRoutes.REGISTER_ROUTE);
+                        },
                         child: const Text(
                           'REGISTER',
                           style: TextStyle(
@@ -92,7 +96,7 @@ class LoginPage extends StatelessWidget {
                         lable: 'Email',
                         obscureText: false,
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: 20),
                       const CustomTextField(
                         icon: CupertinoIcons.lock,
                         keyboardType: TextInputType.visiblePassword,
@@ -133,7 +137,7 @@ class LoginPage extends StatelessWidget {
                             onTap: () {},
                           ),
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),

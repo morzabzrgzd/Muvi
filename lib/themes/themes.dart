@@ -6,7 +6,7 @@ class MyTheme {
     fontFamily: 'Nunito',
     primaryColor: const Color(0xff018786),
     appBarTheme: const AppBarTheme(
-      backgroundColor: Color(0xff1a181a),
+      backgroundColor: Color(0xff202123),
       elevation: 0,
       scrolledUnderElevation: 0,
     ),
@@ -54,7 +54,7 @@ class MyTheme {
           borderRadius: BorderRadius.circular(4),
         ),
         backgroundColor: const Color(0xffFFD130),
-        fixedSize: const Size.fromHeight(45),
+        fixedSize: const Size.fromHeight(42),
       ),
     ),
     colorScheme: const ColorScheme.dark(

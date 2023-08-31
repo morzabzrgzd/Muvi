@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:muvi/components/hd_widget.dart';
 import 'package:muvi/components/imdb_rate.dart';
+import 'package:muvi/constants/app_routes.dart';
 import 'package:muvi/controllers/home/home_ctrl.dart';
 
 import 'components/home_header.dart';
@@ -28,17 +29,17 @@ class HomePage extends StatelessWidget {
                     'New on Cinemas',
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'View More',
-                      style: TextStyle(color: Colors.white.withOpacity(.5)),
-                    ),
-                  ),
+                  // TextButton(
+                  //   onPressed: () {},
+                  //   child: Text(
+                  //     'View More',
+                  //     style: TextStyle(color: Colors.white.withOpacity(.5)),
+                  //   ),
+                  // ),
                 ],
               ),
             ),
-            const SizedBox(height: 5),
+            const SizedBox(height: 15),
             SizedBox(
               // height: 10,
               width: double.infinity,
@@ -118,7 +119,9 @@ class HomePage extends StatelessWidget {
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.toNamed(AppRoutes.POPULARMOVIES_ROUTE);
+                    },
                     child: Text(
                       'View More',
                       style: TextStyle(color: Colors.white.withOpacity(.5)),
@@ -210,7 +213,9 @@ class HomePage extends StatelessWidget {
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.toNamed(AppRoutes.MADEFORYOU_ROUTE);
+                    },
                     child: Text(
                       'View More',
                       style: TextStyle(color: Colors.white.withOpacity(.5)),

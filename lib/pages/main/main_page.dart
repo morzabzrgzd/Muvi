@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/get_core.dart';
 import 'package:muvi/controllers/main/main_ctrl.dart';
 import 'package:muvi/models/bnb/bnb_model.dart';
 

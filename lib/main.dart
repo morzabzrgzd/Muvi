@@ -3,9 +3,12 @@ import 'package:get/get.dart';
 import 'package:muvi/constants/app_routes.dart';
 import 'package:muvi/pages/home/home_page.dart';
 import 'package:muvi/pages/login/login_page.dart';
+import 'package:muvi/pages/made%20for%20you/made_for_you_page.dart';
 import 'package:muvi/pages/main/main_page.dart';
 import 'package:muvi/pages/onboarding/onboarding_page.dart';
+import 'package:muvi/pages/popular%20movies/popular_movies_page.dart';
 import 'package:muvi/pages/register/register_page.dart';
+import 'package:muvi/pages/search/search_page.dart';
 import 'package:muvi/pages/splash/splash_page.dart';
 import 'package:muvi/themes/themes.dart';
 
@@ -48,6 +51,18 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: AppRoutes.HOME_ROUTE,
           page: () => const HomePage(),
+        ),
+        GetPage(
+          name: AppRoutes.SEARCH_ROUTE,
+          page: () => const SearchPage(),
+        ),
+        GetPage(
+          name: AppRoutes.MADEFORYOU_ROUTE,
+          page: () => const MadeForYouPage(),
+        ),
+        GetPage(
+          name: AppRoutes.POPULARMOVIES_ROUTE,
+          page: () => const PopularMoviesPage(),
         ),
       ],
     );

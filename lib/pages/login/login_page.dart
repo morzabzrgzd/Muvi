@@ -1,3 +1,4 @@
+import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -93,14 +94,14 @@ class LoginPage extends StatelessWidget {
                       ),
                       const SizedBox(height: 25),
                       const CustomTextField(
-                        icon: CupertinoIcons.mail,
+                        icon: FeatherIcons.mail,
                         keyboardType: TextInputType.emailAddress,
                         lable: 'Email',
                         obscureText: false,
                       ),
                       const SizedBox(height: 20),
                       const CustomTextField(
-                        icon: CupertinoIcons.lock,
+                        icon: FeatherIcons.lock,
                         keyboardType: TextInputType.visiblePassword,
                         lable: 'Password',
                         obscureText: true,

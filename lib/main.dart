@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:muvi/constants/app_routes.dart';
+import 'package:muvi/pages/edit%20profile/edit_profile_page.dart';
+import 'package:muvi/pages/help/help_page.dart';
 import 'package:muvi/pages/home/home_page.dart';
 import 'package:muvi/pages/login/login_page.dart';
 import 'package:muvi/pages/made%20for%20you/made_for_you_page.dart';
@@ -37,6 +39,10 @@ class MyApp extends StatelessWidget {
           page: () => const OnboardingPage(),
         ),
         GetPage(
+          name: AppRoutes.EDITPROFILE_ROUTE,
+          page: () => const EditProfilePage(),
+        ),
+        GetPage(
           name: AppRoutes.LOGIN_ROUTE,
           page: () => const LoginPage(),
         ),
@@ -55,6 +61,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: AppRoutes.SEARCH_ROUTE,
           page: () => const SearchPage(),
+        ),
+        GetPage(
+          name: AppRoutes.HELP_ROUTE,
+          page: () => const HelpPage(),
         ),
         GetPage(
           name: AppRoutes.MADEFORYOU_ROUTE,

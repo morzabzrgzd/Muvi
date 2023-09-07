@@ -1,3 +1,4 @@
+import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -54,21 +55,21 @@ class RegisterPage extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             const CustomTextField(
-              icon: CupertinoIcons.mail,
+              icon: FeatherIcons.mail,
               keyboardType: TextInputType.emailAddress,
               lable: 'Email',
               obscureText: false,
             ),
             const SizedBox(height: 20),
             const CustomTextField(
-              icon: CupertinoIcons.lock,
+              icon: FeatherIcons.lock,
               keyboardType: TextInputType.visiblePassword,
               lable: 'Password',
               obscureText: true,
             ),
             const SizedBox(height: 20),
             const CustomTextField(
-              icon: CupertinoIcons.lock,
+              icon: FeatherIcons.lock,
               keyboardType: TextInputType.visiblePassword,
               lable: 'Confirmation Password',
               obscureText: true,

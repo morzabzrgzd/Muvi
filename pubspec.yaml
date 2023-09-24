@@ -28,13 +28,17 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  accordion: ^2.6.0
   cupertino_icons: ^1.0.2
   feather_icons: ^1.2.0
+  flick_video_player: ^0.5.0
   flutter:
     sdk: flutter
+  flutter_expanded_tile: ^0.3.7
   flutter_svg: ^2.0.7
   get: ^4.6.5
   smooth_page_indicator: ^1.1.0
+  video_player: ^2.7.1
 
 dev_dependencies:
   flutter_lints: ^2.0.0

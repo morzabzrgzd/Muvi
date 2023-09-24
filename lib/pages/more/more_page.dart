@@ -100,7 +100,9 @@ class MorePage extends StatelessWidget {
               title: 'Inbox',
             ),
             ProfileItems(
-              onTap: () {},
+              onTap: () {
+                Get.toNamed(AppRoutes.HELP_ROUTE);
+              },
               title: 'Help, FAQ',
             ),
             const SizedBox(height: 10),

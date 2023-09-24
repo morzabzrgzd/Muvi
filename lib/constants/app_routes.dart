@@ -12,4 +12,5 @@ class AppRoutes {
   static const String MADEFORYOU_ROUTE = '/made_for_you';
   static const String EDITPROFILE_ROUTE = '/edit_profile';
   static const String HELP_ROUTE = '/help';
+  static const String VIDEOPLAY_ROUTE = '/video_play';
 }

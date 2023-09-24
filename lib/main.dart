@@ -12,6 +12,7 @@ import 'package:muvi/pages/popular%20movies/popular_movies_page.dart';
 import 'package:muvi/pages/register/register_page.dart';
 import 'package:muvi/pages/search/search_page.dart';
 import 'package:muvi/pages/splash/splash_page.dart';
+import 'package:muvi/pages/video%20play/video_play_page.dart';
 import 'package:muvi/themes/themes.dart';
 
 void main() {
@@ -73,6 +74,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: AppRoutes.POPULARMOVIES_ROUTE,
           page: () => const PopularMoviesPage(),
+        ),
+        GetPage(
+          name: AppRoutes.VIDEOPLAY_ROUTE,
+          page: () => const VideoPlayPage(),
         ),
       ],
     );
